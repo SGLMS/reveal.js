@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.reveal { @apply border-8 bg-teal-100; }
+.reveal h1 { @apply text-7xl; }
+.reveal h2 { @apply text-6xl; }
+.reveal h3 { @apply text-3xl; }
