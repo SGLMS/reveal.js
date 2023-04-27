@@ -10,5 +10,6 @@ tmp/**
 node_modules/
 .sass-cache
 tags
-sig
+
 sig.reveal
+sig

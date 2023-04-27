@@ -4,7 +4,11 @@ module.exports = {
     "./sig.reveal/**/*.{html,js}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'print' : { 'raw': 'print' },
+      }
+    },
   },
   plugins: [],
 }
