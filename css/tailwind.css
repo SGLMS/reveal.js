@@ -32,6 +32,11 @@ html * {
 .reveal i          { @apply font-semibold text-orange-700;}
 .reveal code       { @apply text-left; }
 
+.reveal table      { @apply w-full; }
+.reveal table th   { @apply font-semibold text-center bg-slate-700 text-white; }
+.reveal table tbody tr { @apply odd:bg-slate-50 even:bg-slate-200; }
+.reveal table tbody td { @apply text-left px-1; }
+
 .title-page h1,
 .title-page h2,
 .title-page h3,
@@ -41,5 +46,6 @@ html * {
 .framed          { @apply bg-gradient-to-b from-white to-sky-200 border-sky-400 shadow-sky-300; } 
 .framed.red      { @apply bg-gradient-to-b from-white to-red-200 shadow-red-300 border-red-400; }
 
-p.caption        { @apply text-base my-2 italic; }
+p.caption, p.table { @apply text-base my-2 italic; }
 p.caption:before { content: "Figura : "; @apply font-semibold; }
+p.table:before { content: "Tabla : "; @apply font-semibold; }

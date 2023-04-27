@@ -527,6 +527,10 @@ video {
   display: block;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
 }
@@ -571,6 +575,10 @@ video {
   width: 100%;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
 .list-outside {
   list-style-position: outside;
 }
@@ -591,16 +599,20 @@ video {
   gap: 0.5rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .p-4 {
   padding: 1rem;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-base {
@@ -611,6 +623,16 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .italic {
@@ -781,6 +803,35 @@ html * {
   text-align: left;
 }
 
+.reveal table {
+  width: 100%;
+}
+
+.reveal table th {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+  text-align: center;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.reveal table tbody tr:nth-child(odd) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+
+.reveal table tbody tr:nth-child(even) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
+.reveal table tbody td {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  text-align: left;
+}
+
 .title-page h1,
 .title-page h2,
 .title-page h3,
@@ -829,7 +880,7 @@ html * {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
-p.caption {
+p.caption, p.table {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   font-size: 1rem;
@@ -839,5 +890,10 @@ p.caption {
 
 p.caption:before {
   content: "Figura : ";
+  font-weight: 600;
+}
+
+p.table:before {
+  content: "Tabla : ";
   font-weight: 600;
 }
