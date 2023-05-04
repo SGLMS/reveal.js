@@ -9,7 +9,8 @@ log/*.log
 tmp/**
 node_modules/
 .sass-cache
-tags
 
+
+tags
+sglms.reveal
 sig.reveal
-sig

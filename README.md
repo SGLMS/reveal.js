@@ -1,3 +1,19 @@
+#About this fork
+This is a simple fork of reveal.js that uses tailwindcss for its themes. (I just like Tailwind, or maybe I'm used to it, so ...)
+
+To compile Tailwind theme and start (serve) your prentation, just run:
+
+	$ npm install
+	$ npm run watch
+
+These will, both, watch for changes in your templates and css files, and start the server, so you can point your browser to `http://localhost:8000`, as usual.
+
+
+
+#Credits
+
+---
+
 <p align="center">
   <a href="https://revealjs.com">
   <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text-sticker.png" alt="reveal.js" width="500">
